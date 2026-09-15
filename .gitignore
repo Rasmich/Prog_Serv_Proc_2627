@@ -1,0 +1,53 @@
+# Git ignore para proyectos Java con IntelliJ IDEA
+# Este archivo indica qué archivos NO deben subirse al repositorio remoto.
+# Los archivos fuente Java (.java) NO se ignoran, porque queremos que
+# se incluyan en los commits.
+
+# ───────── COMPILACIÓN Y SALIDAS DE BUILD ─────────
+# Carpetas generadas al compilar o ejecutar el proyecto
+/target/
+/build/
+/out/
+/bin/
+.gradle/
+**/build/
+**/out/
+**/target/
+
+# Archivos de clases compiladas de Java
+*.class
+
+# Artefactos empaquetados generados por Maven/Gradle
+*.jar
+*.war
+*.ear
+*.nar
+
+# ───────── IDE: IntelliJ IDEA ─────────
+# Archivos y carpetas locales del entorno de desarrollo
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ───────── CONFIGURACIÓN LOCAL Y METADATOS ─────────
+# Archivos que suelen generarse en local y no interesa versionar
+.settings/
+.classpath
+.project
+
+# ───────── LOGS, TEMPORALES Y COPIAS DE SEGURIDAD ─────────
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# ───────── ERRORES DE JVM ─────────
+hs_err_pid*
+replay_pid*
+
+# ───────── SISTEMA OPERATIVO ─────────
+.DS_Store
+Thumbs.db
+desktop.ini
