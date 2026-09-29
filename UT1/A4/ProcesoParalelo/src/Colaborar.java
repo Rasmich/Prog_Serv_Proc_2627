@@ -49,6 +49,8 @@ public class Colaborar {
 
             System.out.println("Secuencial: " + tiempoSecuencial + " ms");
             System.out.println("Paralelo: " + tiempoParalelo + " ms");
+
+            // Aquí le damos formato a la salida por consola
             System.out.printf("Mejora: %.2f veces%n", mejora);
             System.out.println("Núcleos disponibles: " + nucleos);
 
